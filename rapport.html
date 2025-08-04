@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rapport | Stichting Migrant Moeder en Kind</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+
+      .main-content {
+        display: flex;
+        gap: 30px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .toc {
+        flex: 0 0 250px;
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+        background: #f7f7f7;
+        border-left: 4px solid #0e7162;
+        padding: 20px;
+        font-size: 0.95rem;
+      }
+
+      .toc h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+
+      .toc ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .toc li {
+        margin-bottom: 8px;
+      }
+
+      .toc a {
+        color: #0e7162;
+        text-decoration: none;
+      }
+
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      .report-section {
+        flex: 1;
+      }
+
+      .report-section section {
+        margin-bottom: 50px;
+      }
+
+      .report-section h2 {
+        font-size: 1.8rem;
+        color: #0e7162;
+        margin-bottom: 10px;
+      }
+
+      .report-section h3 {
+        font-size: 1.3rem;
+        margin-top: 25px;
+      }
+
+      .report-section p,
+      .report-section li {
+        line-height: 1.8;
+        font-size: 1.05rem;
+        margin-bottom: 15px;
+      }
+
+      .report-section ul {
+        padding-left: 20px;
+        list-style: disc;
+      }
+
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+        }
+
+        .toc {
+          position: relative;
+          border-left: none;
+          border-top: 4px solid #0e7162;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <header class="main-header">
+      <div class="container nav-wrapper">
+        <img src="images/SMMK_logo.jpg" alt="Logo Stichting" class="logo" />
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          &#9776;
+        </button>
+        <nav class="nav" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html">Financien</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <!-- Sidebar TOC -->
+      <aside class="toc">
+        <h2>Inhoud</h2>
+        <ul>
+          <li><a href="#wie">Wie zijn wij?</a></li>
+          <li><a href="#achtergrond">Achtergrond & cijfers</a></li>
+          <li><a href="#focus">Beleidsfocus 2020–2025</a></li>
+          <li><a href="#beginjaren">Beginjaren (2012–2017)</a></li>
+          <li><a href="#resultaten">Resultaten</a></li>
+          <li><a href="#politiek">Politieke betrokkenheid</a></li>
+          <li><a href="#wijziging">Aandachtswijziging (2018–2019)</a></li>
+          <li><a href="#huidig">Huidige focus: Nederland Gezond en Wel</a></li>
+          <li><a href="#projecten">Projecten</a></li>
+          <li><a href="#jaarverslagen">Jaarverslagen</a></li>
+        </ul>
+      </aside>
+
+      <!-- Report Sections -->
+      <div class="report-section">
+        <section id="wie">
+          <h2>Wie zijn wij?</h2>
+          <p>[...tekst hier...]</p>
+        </section>
+
+        <section id="achtergrond">
+          <h2>Achtergrond & cijfers</h2>
+          <p>[...tekst hier...]</p>
+        </section>
+
+        <section id="focus">
+          <h2>Beleidsfocus 2020–2025</h2>
+          <p>[...tekst hier...]</p>
+        </section>
+
+        <section id="beginjaren">
+          <h2>Beginjaren (2012–2017)</h2>
+          <p>[...tekst hier...]</p>
+        </section>
+
+        <section id="resultaten">
+          <h2>Resultaten</h2>
+          <ul>
+            <li>27 vrouwen namen naailes...</li>
+            <li>
+              5 vrouwen zijn radio- en televisiepresentatrices geworden...
+            </li>
+            <!-- etc. -->
+          </ul>
+        </section>
+
+        <section id="politiek">
+          <h2>Politieke betrokkenheid</h2>
+          <p>[...tekst hier...]</p>
+        </section>
+
+        <section id="wijziging">
+          <h2>Aandachtswijziging (2018–2019)</h2>
+          <p>[...tekst hier...]</p>
+        </section>
+
+        <section id="huidig">
+          <h2>Huidige focus: Nederland Gezond en Wel</h2>
+          <p>[...tekst hier...]</p>
+        </section>
+
+        <section id="projecten">
+          <h2>Projecten</h2>
+          <p>[...tekst hier...]</p>
+        </section>
+
+        <section id="jaarverslagen">
+          <h2>Jaarverslagen</h2>
+          <ul>
+            <li>
+              <i class="fas fa-file-pdf"></i> <a href="#">Jaarverslag 2021</a>
+            </li>
+            <li>
+              <i class="fas fa-file-pdf"></i> <a href="#">Jaarverslag 2022</a>
+            </li>
+            <li>
+              <i class="fas fa-file-pdf"></i> <a href="#">Jaarverslag 2023</a>
+            </li>
+            <li>
+              <i class="fas fa-file-pdf"></i> <a href="#">Jaarverslag 2024</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- Column 1: Correspondentiegegevens -->
+        <div class="footer-column">
+          <h3>Correspondentiegegevens</h3>
+          <ul>
+            <li><strong>KvK:</strong> 58178430</li>
+            <li><strong>RSIN:</strong> 852911993</li>
+            <li><strong>Rechtsvorm:</strong> Stichting</li>
+            <li><strong>Naam:</strong> Stichting Migrant Moeder en Kind</li>
+            <li><strong>Zetel:</strong> Amsterdam</li>
+            <li><strong>IBAN:</strong> NL35 INGB 0007666464</li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Contact -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Laan van Kronenburg 14, 1183
+              AS Amstelveen
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:care@srmmk.org">care@srmmk.org</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+31650914842">06 50 91 48 42</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Links -->
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html">Financiën</a></li>
+            <li><a href="projecten.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Doelstellingen</a></li>
+            <li><a href="#">Privacybeleid</a></li>
+            <li><a href="#">Gedragscode</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 SRMMK. Alle rechten voorbehouden. | Ontwerp door
+          <a href="https://honouredhands.com" target="_blank">honouredhands</a>
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/yourprofile" target="_blank" aria-label="X"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/yourchannel"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
