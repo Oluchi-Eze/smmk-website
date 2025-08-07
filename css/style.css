@@ -207,6 +207,83 @@ body {
 .intro .btn {
   margin-top: 30px;
 }
+
+/* Board Members Section */
+.board-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.member-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-photo {
+  height: auto; /* Let the image dictate height */
+  aspect-ratio: 3/4; /* Optional: Forces a portrait ratio (width:height) */
+}
+
+.member-photo img {
+  width: 100%;
+  height: auto; /* Natural height */
+  display: block; /* Removes extra space below image */
+}
+
+.member-info {
+  padding: 20px;
+}
+
+.member-info h4 {
+  font-size: 1.2rem;
+  color: #0e7162;
+  margin-bottom: 5px;
+}
+
+.member-position {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.member-contact {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.member-contact a {
+  color: #0e7162;
+  margin-right: 12px;
+  font-size: 1.1rem;
+  transition: opacity 0.3s;
+}
+
+.member-contact a:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .board-members {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
 .footer {
   background-color: #0e7162;
   color: white;

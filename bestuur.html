@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestuur | Stichting Migrant Moeder en Kind</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Reuse styles from rapport.html with adjustments */
+      .main-content {
+        display: flex;
+        gap: 30px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .toc {
+        flex: 0 0 250px;
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+        background: #f7f7f7;
+        border-left: 4px solid #0e7162;
+        padding: 20px;
+        font-size: 0.95rem;
+      }
+
+      .toc h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+
+      .toc ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .toc li {
+        margin-bottom: 8px;
+      }
+
+      .toc a {
+        color: #0e7162;
+        text-decoration: none;
+      }
+
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      .content-section {
+        flex: 1;
+      }
+
+      .content-section section {
+        margin-bottom: 50px;
+      }
+
+      .content-section h2 {
+        font-size: 1.8rem;
+        color: #0e7162;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #0e7162;
+        padding-bottom: 10px;
+      }
+
+      .content-section h3 {
+        font-size: 1.4rem;
+        color: #0e7162;
+        margin: 30px 0 15px;
+      }
+
+      .content-section p,
+      .content-section li {
+        line-height: 1.8;
+        font-size: 1.05rem;
+        margin-bottom: 15px;
+      }
+
+      .content-section ul {
+        padding-left: 25px;
+        list-style: disc;
+      }
+
+      /* Board member cards */
+      .board-members {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        margin: 40px 0;
+      }
+
+      .member-card {
+        background: #f7f7f7;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .member-card h4 {
+        font-size: 1.2rem;
+        color: #0e7162;
+        margin-bottom: 5px;
+      }
+
+      .member-position {
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+        }
+
+        .toc {
+          position: relative;
+          border-left: none;
+          border-top: 4px solid #0e7162;
+          margin-bottom: 30px;
+        }
+
+        .board-members {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      section[id] {
+        scroll-margin-top: 100px; /* adjust based on your navbar height */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container nav-wrapper">
+        <img src="images/SMMK_logo.jpg" alt="Logo Stichting" class="logo" />
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          &#9776;
+        </button>
+        <nav class="nav" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html" aria-current="page">Bestuur</a></li>
+            <li><a href="financien.html">Financien</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Sidebar TOC -->
+      <aside class="toc">
+        <h2>Inhoud</h2>
+        <ul>
+          <li><a href="#activiteiten">Activiteiten bestuur</a></li>
+          <li><a href="#relatie">Relatie Bestuur & Stuurgroep</a></li>
+          <li><a href="#leden">Bestuursleden</a></li>
+          <li><a href="#vergoeding">Vergoeding bestuursleden</a></li>
+          <li><a href="#beleidsplan">Beleidsplan 2025-2030</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content Sections -->
+      <div class="content-section">
+        <section id="activiteiten">
+          <h2>Activiteiten bestuur</h2>
+          <p>
+            De stichting wordt bestuurd door een bestuur, bestaande uit een
+            oneven aantal van ten minste drie leden.
+          </p>
+
+          <ul>
+            <li>
+              Het bestuur kiest uit zijn midden een voorzitter, een secretaris
+              en een penningmeester.
+            </li>
+            <li>
+              De penningmeester legt uiterlijk in de maand juni aan het bestuur
+              rekening en verantwoording af van het door hem in het voorgaande
+              boekjaar gevoerde beheer.
+            </li>
+            <li>
+              De voorzitter kan geen tweede functie vervullen binnen het
+              bestuur.
+            </li>
+            <li>
+              Het bestuur komt minimaal tweemaal per jaar samen voor een
+              bestuursvergadering. Hiervan worden notulen opgemaakt.
+            </li>
+          </ul>
+
+          <h3>
+            Onder verantwoordelijkheid van het bestuur worden de volgende
+            activiteiten verricht:
+          </h3>
+          <ul>
+            <li>Het opzetten en begeleiden van projecten.</li>
+            <li>Het selecteren van bestemmingsdoeleinden.</li>
+          </ul>
+
+          <h3>
+            Het bestuur is verantwoordelijk voor een gezond financieel beleid.
+            De taken die hierbij horen zijn onder meer:
+          </h3>
+          <ul>
+            <li>Jaarlijks een begroting opstellen.</li>
+            <li>Jaarlijks een jaarrekening vaststellen en goedkeuren.</li>
+            <li>Beheren van de gelden.</li>
+            <li>Besteden van de gelden en het creëren van voorzieningen.</li>
+          </ul>
+
+          <p>De stichting kent een bestuur en een stuurgroep.</p>
+        </section>
+
+        <section id="relatie">
+          <h2>Relatie tussen Bestuur & Stuurgroep</h2>
+          <p>
+            Het bestuur houdt zich bezig met beheerszaken, financiën en
+            juridische zaken.
+          </p>
+          <p>
+            De stuurgroep behartigt de inhoudelijke zaken. De uitvoerder is
+            voorzitter van de stuurgroep. Hij kiest naar eigen inzicht
+            stuurgroepleden die geschikt zijn voor het project.
+          </p>
+          <p>
+            Hij is de eerst aanspreekbare bij het bestuur betreffende de
+            werkzaamheden van de stuurgroep.
+          </p>
+          <p>
+            Het bestuur behoudt de eindverantwoordelijkheid voor de door
+            uitvoerder en stuurgroep verrichte werkzaamheden.
+          </p>
+        </section>
+
+        <section id="leden">
+          <h2>Bestuursleden</h2>
+          <p>
+            De stichting kent per april 2020 een nieuw bestuur. De bestuursleden
+            zijn:
+          </p>
+
+          <div class="board-members">
+            <!-- Member 1 -->
+            <div class="member-card">
+              <div class="member-photo">
+                <img
+                  src="images/Duncan-R-Wielzen.webp"
+                  alt="Portret van Dr. Duncan R. Wielzen"
+                  loading="lazy"
+                />
+              </div>
+              <div class="member-info">
+                <h4>De heer Dr. Duncan R. Wielzen</h4>
+                <span class="member-position">Voorzitter</span>
+              </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="member-card">
+              <div class="member-photo">
+                <img
+                  src="images/Pejman.webp"
+                  alt="Portret van mr. Pejman Salim"
+                  loading="lazy"
+                />
+              </div>
+              <div class="member-info">
+                <h4>De heer mr. Pejman Salim</h4>
+                <span class="member-position">Secretaris</span>
+              </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="member-card">
+              <div class="member-photo">
+                <img
+                  src="images/Raymond-Mberekpe.webp"
+                  alt="Portret van drs. Raymond Mberekpe"
+                  loading="lazy"
+                />
+              </div>
+              <div class="member-info">
+                <h4>De heer drs. Raymond Mberekpe</h4>
+                <span class="member-position">Penningmeester</span>
+              </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="member-card">
+              <div class="member-photo">
+                <img
+                  src="images/Matty-vice-voorzitter.webp"
+                  alt="Portret van drs. Matty Njie"
+                  loading="lazy"
+                />
+              </div>
+              <div class="member-info">
+                <h4>Mevrouw drs. Matty Njie</h4>
+                <span class="member-position">Vice-Voorzitter</span>
+              </div>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="member-card">
+              <div class="member-photo">
+                <img
+                  src="images/Herman-Huijman.webp"
+                  alt="Portret van Herman Huijmans"
+                  loading="lazy"
+                />
+              </div>
+              <div class="member-info">
+                <h4>De heer Herman Huijmans</h4>
+                <span class="member-position">Board Member</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="vergoeding">
+          <h2>Vergoeding bestuursleden</h2>
+          <p>
+            De bestuursleden werken strikt zonder beloning. De bestuursleden
+            ontvangen geen vergoeding voor hun bestuurswerkzaamheden.
+          </p>
+        </section>
+
+        <section id="beleidsplan">
+          <h2>Beleidsplan 2025-2030</h2>
+
+          <h3>Inhoudsopgave</h3>
+          <ol>
+            <li>DOEL EN FOCUS</li>
+            <li>FINANCIEN</li>
+            <li>BESTUUR</li>
+            <li>CORRESPONDENTIEGEGEVENS</li>
+          </ol>
+
+          <h3>1. DOEL EN FOCUS</h3>
+
+          <h4>1.1 Doel en uitvoering, samenwerkingspartners</h4>
+          <p>
+            Ten behoeve van de uitvoering van onze plannen is op 19 juni 2013 de
+            onafhankelijke stichting Migrant Moeder en Kind opgericht. De
+            stichting stelt zich in algemene zin ten doel: het ondersteunen bij
+            de emancipatie en inburgering van de kwetsbare groepen, sociaal
+            geïsoleerde migrantenvrouwen en hun kinderen van (voornamelijk)
+            Afrikaanse afkomst, een en ander in de ruimste zin van het woord.
+          </p>
+
+          <p>
+            De stichting tracht haar doel (onder meer) te verwezenlijken door:
+          </p>
+          <ul>
+            <li>
+              het organiseren van concrete activiteiten als ontmoetingsgroepen,
+              leerzame- en ontspanningsactiviteiten in de breedste zin van het
+              woord, welke specifiek zijn afgestemd op de doelgroep;
+            </li>
+            <li>
+              het ontwikkelen van een vrijwilligersnetwerk die de mensen uit de
+              doelgroep op een duurzame en sociale manier kan ondersteunen bij
+              hun ontwikkeling en inburgering, en
+            </li>
+            <li>
+              het ontwikkelen van een netwerk van samenwerkingspartners voor de
+              stichting waardoor mogelijkheden worden ontwikkeld om de mensen
+              uit de doelgroep aansluiting te laten vinden bij activiteiten
+              buiten hun eigen directe gezichtsveld en leefomgeving.
+            </li>
+          </ul>
+
+          <h4>1.2 Doelstellingen van de stichting in 2025-2030</h4>
+          <p><strong>Terugblik</strong></p>
+          <p>
+            Stichting Migrant, Moeder en Kind is een organisatie die zich richt
+            op het verbeteren van de leefkwaliteit, het welzijn en de
+            maatschappelijke omstandigheden van Afrikaanse migranten in
+            Nederland. De doelgroep van de stichting wordt gevormd door
+            migranten wiens roots in Sub Sahara Afrika liggen. Dat gaat zowel om
+            nieuwkomers die de laatste jaren zijn gearriveerd, als om Afrikanen
+            die al jaren in Nederland woonachtig zijn, als om mensen vanuit de
+            Afrikaanse diasporagemeenschappen elders in de wereld (zoals
+            Suriname en Caribisch gebied).
+          </p>
+
+          <p>
+            In Nederland wonen officieel 200.000 Afrikaanse migranten en in
+            totaal zo'n 1 miljoen mensen met Afrikaanse roots (Bron: cijfers CBS
+            2014). Velen van deze groep migranten zijn vluchtelingen. Zij zijn
+            hun land ontvlucht vanwege oorlog of armoede. Sommigen waren reeds
+            bij aankomst in Nederland getraumatiseerd, anderen ontwikkelden in
+            de loop der jaren hier in Nederland psychische stoornissen.
+          </p>
+
+          <p>
+            De afgelopen beleidsperiode 2020-2025 heeft de stichting zich
+            gericht op de geestelijke gezondheid van onze doelgroep. Met het
+            project 'Nederland gezond en wel' hebben wij het thema mentale
+            gezondheid op de agenda gezet binnen gemeenschappen met Afrikaanse
+            roots in Nederland, en het belang van cultuursensitieve zorg
+            aangekaart bij Nederlandse zorgverleners in de GGZ. Op deze manier
+            hebben we een bijdrage geleverd aan het nader tot elkaar brengen van
+            twee groepen, te weten Nederlandse zorgverleners en Nederlanders
+            afkomstig uit Afrika met psychische stoornissen. Onze methodiek was
+            gebaseerd op een community-gerichte aanpak: wij betrokken ook mensen
+            uit de doelgroep die geen psychische klachten hebben. Het vergroten
+            van het besef dat psychische en geestelijke problemen een ziekte
+            zijn loopt als een rode draad door ons gehele project.
+          </p>
+
+          <p><strong>Bestendiging van thema mentale gezondheid</strong></p>
+          <p>
+            Eén van de vuistregels van onze organisatie is dat we zeer nauw
+            willen blijven aansluiten bij de actualiteit en ontwikkelingen in de
+            samenleving. Wij werken namelijk vanuit die actualiteit en praktijk
+            naar de theorie. Wij letten op wat gaande is in de samenleving en
+            wat dit betekent voor onze doelgroep en hoe beide elkaar
+            beïnvloeden. Door de ontwikkelingen in de samenleving in de gaten te
+            houden willen we op tijd zijn om preventief te kunnen werken. Maar
+            als wij door welke redenen dan ook door de realiteit ingehaald
+            worden, dan werken wij zowel preventief, en plegen waar nodig ook
+            interventies in de behandeling en oplossing van problemen.
+          </p>
+
+          <p>
+            Gezien de huidige antimigrantenretoriek in de politiek en de
+            samenleving, maar ook allerlei grote thema's van afgelopen jaren
+            zoals slavernijverleden, racisme/discriminatie op institutioneel
+            niveau, de kinderopvangtoeslagaffaire, inflatie/armoede, oorlogen
+            nabij en ver weg, toenemende mentale gezondheidsproblemen ook bij
+            jongeren en beschadiging uit het verleden, gaat Stichting Migrant
+            Moeder en Kind ook de komende jaren door op de ingeslagen weg.
+            Mentale gezondheid blijft onze focusprioriteit. De komende vijf jaar
+            zullen wij zowel preventief werken als mensen met geestelijke en
+            mentale problemen behandelen.
+          </p>
+
+          <p><strong>Twee extra thema's</strong></p>
+          <p>
+            Wel voegen wij twee extra maar nauw gerelateerde thema's toe aan ons
+            beleid: familie en onderwijs. Het fundament van onze stichting ligt
+            in familiekwesties. Gezonde familierelaties bieden een vangnet voor
+            mensen om hun mentale weerbaarheid te vergroten; verstoorde
+            familierelaties kunnen iemands hele leven overhoop gooien. Er is
+            intussen landelijk erkenning dat alleenstaande gezinnen steun nodig
+            hebben. Er is nog onvoldoende erkenning en beleid over de plaats en
+            rol van familie in de samenleving. Familie is de bouwsteen van de
+            samenleving. Wij hopen dat overheidsinstellingen zoals lokale
+            overheden actief familiebeleid zullen voeren.
+          </p>
+
+          <p>
+            Onderwijs in de brede zin van het woord zal een belangrijke plaats
+            gaan nemen in ons beleid. Dit betekent ook dat ouders betrokken
+            zullen raken in het onderwijs van hun kinderen. Wij gaan ook op het
+            gebied van onderzoek, interventies plegen, behandeling, herstel,
+            voorlichting en training werken. Herstel is een belangrijk woord
+            voor de komende vijf jaar.
+          </p>
+
+          <p>
+            Eén plan dat we hebben is om een vast inloopcentrum te openen in
+            Amsterdam-Zuidoost, om present te zijn voor en bij de doelgroep.
+            Daar zullen wij verder onderzoek kunnen blijven doen naar het
+            welzijn en welbevinden van de doelgroep en wat voor hen
+            rechtvaardige en effectieve interventies en begeleiding zijn. Er
+            blijft een kloof tussen de doelgroep met een niet-westerse afkomst
+            en mensen met een westerse afkomst, door het verschil in culturele
+            opvoeding en het verschil in culturele kijk op gezondheid en zorg.
+            Wij blijven onze doelgroep ook trainen om meer bewustwording over en
+            gewaarwording van de eigen culturele erfenis te stimuleren. Ook
+            trainen wij zorgverleners van westerse afkomst om zich bewust te
+            worden en gewaar te worden van hun eigen cultureel bepaalde context.
+          </p>
+
+          <p>
+            Daarnaast blijven wij zowel lokaal als landelijk aandacht vragen
+            voor rechtvaardige behandeling door en begrip bij zorgprofessionals
+            voor deze doelgroep. Wij blijven ons inzetten voor het belang dat
+            beleidsmakers rekening gaan houden met de niet-westerse culturele
+            achtergrond van de doelgroep, zodat ze beleid ontwikkelen dat de
+            doelgroep en het samenleven ten goede zal komen. Daarom geven wij
+            training aan zorgprofessionals, zorgondersteuners en beleidsmakers.
+            Dit doen wij zodat de doelgroep niet meer afgewezen wordt door
+            zorgprofessionals als ze om zorg vragen omdat ze te complex worden
+            gevonden. Maar ook dat de zorgprofessionals begrijpen dat er
+            werkelijk een culturele barrière tussen hen en deze doelgroep van
+            niet-westerse afkomst is, en dat er ook bruggen gebouwd kunnen
+            worden.
+          </p>
+
+          <h4>1.3 Vier clusters van kernactiviteiten</h4>
+          <p>
+            Onze doelstellingen willen wij nastreven door ons te richten op vier
+            concrete kernactiviteiten:
+          </p>
+          <ol>
+            <li>Behandeling van de doelgroep.</li>
+            <li>Bewustwording vergroten.</li>
+            <li>
+              Wetenschappelijke kennis verzamelen, borgen en implementeren in
+              concrete zorgverlening, d.m.v. handelingsonderzoek en door te
+              fungeren als kenniscentrum.
+            </li>
+            <li>
+              Maatschappelijke participatie en het algemeen welzijn van de
+              doelgroep bevorderen.
+            </li>
+          </ol>
+
+          <h3>2. FINANCIEN</h3>
+
+          <h4>2.1 Wijze van werving van gelden</h4>
+          <p>
+            Het vermogen van de stichting zal (onder meer) worden gevormd door:
+          </p>
+          <ul>
+            <li>subsidies en donaties;</li>
+            <li>
+              hetgeen de stichting door erfstelling, legaat, schenking of op
+              enigerlei andere wijze verkrijgt;
+            </li>
+            <li>
+              hetgeen de stichting verkrijgt uit het aan derden ter beschikking
+              stellen van haar kennis.
+            </li>
+          </ul>
+
+          <h4>2.2 Besteding van het vermogen</h4>
+          <p>
+            Het vermogen wordt besteed conform de doelstelling van de stichting:
+          </p>
+          <ul>
+            <li>
+              De inkomsten van de stichting worden in de eerste plaats gebruikt
+              om de uitgaven te compenseren.
+            </li>
+            <li>
+              De inkomsten van de stichting kunnen in de tweede plaats worden
+              aangewend om andere stichtingen of initiatieven te steunen die een
+              vergelijkbare doelstelling hebben als de eigen stichting.
+            </li>
+            <li>
+              De stichting heeft niet de doelstelling om winst te maken. Wel wil
+              zij een gezonde buffer aanhouden om tegenvallende inkomsten op te
+              kunnen vangen. Daarnaast wordt dit gereserveerd om nieuwe
+              activiteiten te ontwikkelen en op te zetten.
+            </li>
+          </ul>
+
+          <h3>3. BESTUUR</h3>
+
+          <h4>3.1 Activiteiten bestuur</h4>
+          <ul>
+            <li>
+              De stichting wordt bestuurd door een bestuur, bestaande uit een
+              oneven aantal van ten minste drie leden.
+            </li>
+            <li>
+              Het bestuur kiest uit zijn midden een voorzitter, een secretaris
+              en een penningmeester.
+            </li>
+            <li>
+              De penningmeester legt uiterlijk in de maand juni aan het bestuur
+              rekening en verantwoording af van het door hem in het voorgaande
+              boekjaar gevoerde beheer.
+            </li>
+            <li>
+              De voorzitter kan geen tweede functie vervullen binnen het
+              bestuur.
+            </li>
+            <li>
+              Het bestuur komt minimaal twee maal per jaar samen voor een
+              bestuursvergadering. Hiervan worden notulen opgemaakt.
+            </li>
+          </ul>
+
+          <p>
+            <strong
+              >Onder verantwoordelijkheid van het bestuur worden de volgende
+              activiteiten verricht:</strong
+            >
+          </p>
+          <ul>
+            <li>Het opzetten en begeleiden van projecten.</li>
+            <li>Het selecteren van bestemmingsdoeleinden.</li>
+          </ul>
+
+          <p>
+            <strong
+              >Het bestuur is verantwoordelijk voor een gezond financieel
+              beleid. De taken die hierbij horen zijn onder meer:</strong
+            >
+          </p>
+          <ul>
+            <li>Jaarlijks een begroting opstellen;</li>
+            <li>Jaarlijks een jaarrekening vaststellen en goedkeuren;</li>
+            <li>Beheren van de gelden;</li>
+            <li>Besteden van de gelden en het creëren van voorzieningen.</li>
+          </ul>
+
+          <p>
+            De stichting kent een bestuur en een stuurgroep. Het bestuur houdt
+            zich bezig met beheerszaken, financiën en juridische zaken. De
+            stuurgroep doet de inhoudelijke zaken.
+          </p>
+
+          <p>De stichting kent de volgende bestuursleden:</p>
+          <ul>
+            <li>Voorzitter – Dhr. Duncan Wielzen</li>
+            <li>Secretaris – Dhr. Pejman Salim</li>
+            <li>Penningmeester – Dhr. Raymond Mberekpe</li>
+            <li>Lid – Mw. Matty Njie</li>
+            <li>Lid – Dhr. Herman Huijmans</li>
+          </ul>
+
+          <h4>3.2 Vergoeding bestuursleden</h4>
+          <p>
+            De bestuursleden ontvangen geen vergoeding voor hun
+            bestuurswerkzaamheden.
+          </p>
+
+          <h3>4. CORRESPONDENTIEGEGEVENS</h3>
+          <ul>
+            <li><strong>KvK:</strong> 58178430</li>
+            <li><strong>RSIN:</strong> 852911993</li>
+            <li><strong>Rechtsvorm:</strong> Stichting</li>
+            <li>
+              <strong>Statutaire naam:</strong> Stichting Migrant Moeder en Kind
+            </li>
+            <li><strong>Statutaire zetel:</strong> Amsterdam</li>
+            <li>
+              <strong>Bezoekadres:</strong> Laan van Kronenburg 14, 1183 AS
+              Amstelveen
+            </li>
+            <li>
+              <strong>Bankgegevens:</strong> Stichting Migrant Moeder en Kind
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- Column 1: Correspondentiegegevens -->
+        <div class="footer-column">
+          <h3>Correspondentiegegevens</h3>
+          <ul>
+            <li><strong>KvK:</strong> 58178430</li>
+            <li><strong>RSIN:</strong> 852911993</li>
+            <li><strong>Rechtsvorm:</strong> Stichting</li>
+            <li><strong>Naam:</strong> Stichting Migrant Moeder en Kind</li>
+            <li><strong>Zetel:</strong> Amsterdam</li>
+            <li><strong>IBAN:</strong> NL35 INGB 0007666464</li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Contact -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Laan van Kronenburg 14, 1183
+              AS Amstelveen
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:care@srmmk.org">care@srmmk.org</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+31650914842">06 50 91 48 42</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Links -->
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html">Financiën</a></li>
+            <li><a href="projecten.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Doelstellingen</a></li>
+            <li><a href="#">Privacybeleid</a></li>
+            <li><a href="#">Gedragscode</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 SRMMK. Alle rechten voorbehouden. | Ontwerp door
+          <a href="https://honouredhands.com" target="_blank">honouredhands</a>
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/yourprofile" target="_blank" aria-label="X"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/yourchannel"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
