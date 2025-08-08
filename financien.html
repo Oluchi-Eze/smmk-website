@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financiën | Stichting Migrant Moeder en Kind</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Centered Content with Margins */
+      .main-content {
+        display: flex;
+        gap: 30px;
+        padding: 40px 5%;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .content-section {
+        flex: 1;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* Enhanced Financial Page Styles */
+      .financial-section {
+        margin-bottom: 60px;
+      }
+
+      .financial-section h2 {
+        color: #0e7162;
+        font-size: 1.8rem;
+        border-bottom: 2px solid #0e7162;
+        padding-bottom: 12px;
+        margin-bottom: 25px;
+      }
+
+      .financial-section h3 {
+        font-size: 1.5rem;
+        color: #0e7162;
+        margin: 35px 0 20px;
+      }
+
+      .financial-list {
+        padding-left: 30px;
+        margin: 25px 0;
+        font-size: 1.1rem;
+      }
+
+      .financial-list li {
+        margin-bottom: 15px;
+        line-height: 1.7;
+      }
+
+      .annual-reports {
+        margin: 50px 0;
+      }
+
+      .report-item {
+        margin-bottom: 30px;
+        padding: 25px;
+        background: #f7f7f7;
+        border-left: 4px solid #0e7162;
+        border-radius: 4px;
+      }
+
+      .report-item h3 {
+        margin: 0 0 15px 0;
+        color: #0e7162;
+        font-size: 1.4rem;
+      }
+
+      .report-download {
+        display: inline-flex;
+        align-items: center;
+        background: #0e7162;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-top: 15px;
+        transition: background 0.3s;
+      }
+
+      .report-download:hover {
+        background: #0a564a;
+      }
+
+      .report-download i {
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+
+      .explanation-box {
+        background: #f0f9f8;
+        padding: 30px;
+        border-radius: 8px;
+        margin: 50px 0;
+        border: 1px solid #d1e9e6;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        background: #0e7162;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background 0.3s;
+      }
+
+      .button:hover {
+        background: #0a564a;
+      }
+
+      .button i {
+        margin-right: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+          padding: 30px 5%;
+        }
+      }
+
+      .content-section {
+        padding-left: 0;
+      }
+
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+          padding: 30px 5%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- Navigation from your existing pages -->
+      <div class="container nav-wrapper">
+        <img src="images/SMMK_logo.jpg" alt="Logo Stichting" class="logo" />
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          &#9776;
+        </button>
+        <nav class="nav" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html" aria-current="page">Financiën</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="content-section">
+        <section id="vermogen" class="financial-section">
+          <h2>Financiën</h2>
+          <h3>Vermogensvorming</h3>
+          <p>
+            Het vermogen van de stichting zal (onder meer) worden gevormd door:
+          </p>
+          <ul class="financial-list">
+            <li>Subsidies en donaties</li>
+            <li>
+              Hetgeen de stichting door erfstelling, legaat, schenking of op
+              enigerlei andere wijze verkrijgt
+            </li>
+            <li>
+              Hetgeen de stichting verkrijgt uit het aan derden ter beschikking
+              stellen van haar kennis
+            </li>
+          </ul>
+        </section>
+
+        <section id="besteding" class="financial-section">
+          <h2>Besteding van het vermogen</h2>
+          <h3>Financieel beleid</h3>
+          <p>
+            Het vermogen wordt besteed conform de doelstelling van de stichting:
+          </p>
+          <ul class="financial-list">
+            <li>
+              De inkomsten van de stichting worden in de eerste plaats gebruikt
+              om de uitgaven te compenseren
+            </li>
+            <li>
+              De inkomsten van de stichting kunnen in de tweede plaats worden
+              aangewend om andere stichtingen of initiatieven te steunen die een
+              vergelijkbare doelstelling hebben als de eigen stichting
+            </li>
+          </ul>
+          <h3>Winstbeleid</h3>
+          <p>
+            De stichting heeft als doel om niet winst te maken. Wel wil zij een
+            gezonde buffer aanhouden om tegenvallende inkomsten op te kunnen
+            vangen. Deze buffer wordt tevens gereserveerd om nieuwe activiteiten
+            te ontwikkelen.
+          </p>
+        </section>
+
+        <section id="jaarrekeningen" class="financial-section">
+          <h2>Jaarrekeningen</h2>
+          <h3>Documenten downloaden</h3>
+          <div class="annual-reports">
+            <div class="report-item">
+              <h3>Jaarrekening Stichting MMK 2019</h3>
+              <p>Complete financiële verantwoording over 2019</p>
+              <a
+                href="downloads/jaarrekening-2019.pdf"
+                class="report-download"
+                download
+              >
+                <i class="fas fa-file-pdf"></i> Download PDF (2.4 MB)
+              </a>
+            </div>
+
+            <div class="report-item">
+              <h3>Jaarrekening Stichting MMK 2020</h3>
+              <p>Complete financiële verantwoording over 2020</p>
+              <a
+                href="downloads/jaarrekening-2020.pdf"
+                class="report-download"
+                download
+              >
+                <i class="fas fa-file-pdf"></i> Download PDF (2.7 MB)
+              </a>
+            </div>
+
+            <div class="report-item">
+              <h3>Jaarrekening Stichting MMK 2021</h3>
+              <p>Complete financiële verantwoording over 2021</p>
+              <a
+                href="downloads/jaarrekening-2021.pdf"
+                class="report-download"
+                download
+              >
+                <i class="fas fa-file-pdf"></i> Download PDF (3.1 MB)
+              </a>
+            </div>
+
+            <div class="report-item">
+              <h3>Jaarrekening Stichting MMK 2022</h3>
+              <p>Complete financiële verantwoording over 2022</p>
+              <a
+                href="downloads/jaarrekening-2022.pdf"
+                class="report-download"
+                download
+              >
+                <i class="fas fa-file-pdf"></i> Download PDF (3.5 MB)
+              </a>
+            </div>
+
+            <div class="report-item">
+              <h3>Jaarrekening Stichting MMK 2023</h3>
+              <p>Complete financiële verantwoording over 2023</p>
+              <a
+                href="downloads/jaarrekening-2023.pdf"
+                class="report-download"
+                download
+              >
+                <i class="fas fa-file-pdf"></i> Download PDF (3.8 MB)
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="toelichting" class="financial-section">
+          <div class="explanation-box">
+            <h2>Toelichting op de jaarrekening van 2019</h2>
+            <h3>Bijzonder jaar</h3>
+            <p>
+              In het jaar 2019 heeft de Stichting Migrant Moeder en Kind haar
+              tijd vooral besteed aan het plegen van onderzoek, en op basis van
+              dit onderzoek nadenken over ons toekomstig beleid.
+            </p>
+
+            <h3>Vrijwillige inzet</h3>
+            <p>
+              We hebben dit zorgvuldig en intensief gedaan, geheel op
+              vrijwillige basis. Hierdoor heeft de stichting begrotingsneutraal
+              gewerkt. We hadden geen inkomsten en geen uitgaven. Dit was het
+              gevolg van een bewuste keuze waar we wel en niet onze tijd en
+              energie aan wilden besteden.
+            </p>
+
+            <h3>Onderzoeksresultaten</h3>
+            <p>
+              Op eigen kracht hebben we ons ingezet en van onderop
+              handelingsonderzoek gedaan bij de doelgroep als voorbereiding voor
+              de nieuwe aanpak. Dit heeft geresulteerd in een nieuw beleidsplan
+              waarvoor vanaf 2020 fondsen geworven zijn.
+            </p>
+
+            <a href="bestuur.html" class="button">
+              <i class="fas fa-book"></i> Meer informatie over ons bestuur &
+              beleid
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- Column 1: Correspondentiegegevens -->
+        <div class="footer-column">
+          <h3>Correspondentiegegevens</h3>
+          <ul>
+            <li><strong>KvK:</strong> 58178430</li>
+            <li><strong>RSIN:</strong> 852911993</li>
+            <li><strong>Rechtsvorm:</strong> Stichting</li>
+            <li><strong>Naam:</strong> Stichting Migrant Moeder en Kind</li>
+            <li><strong>Zetel:</strong> Amsterdam</li>
+            <li><strong>IBAN:</strong> NL35 INGB 0007666464</li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Contact -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Laan van Kronenburg 14, 1183
+              AS Amstelveen
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:care@srmmk.org">care@srmmk.org</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+31650914842">06 50 91 48 42</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Links -->
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html">Financiën</a></li>
+            <li><a href="projecten.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Doelstellingen</a></li>
+            <li><a href="#">Privacybeleid</a></li>
+            <li><a href="#">Gedragscode</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 SRMMK. Alle rechten voorbehouden. | Ontwerp door
+          <a href="https://honouredhands.com" target="_blank">honouredhands</a>
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/yourprofile" target="_blank" aria-label="X"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/yourchannel"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute("id");
+
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+          ) {
+            document
+              .querySelector(`.toc a[href="#${sectionId}"]`)
+              .classList.add("active");
+          } else {
+            document
+              .querySelector(`.toc a[href="#${sectionId}"]`)
+              .classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
