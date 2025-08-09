@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotterdam Gezond en Wel | Stichting Migrant Moeder en Kind</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Project Page Specific Styles */
+      .project-header {
+        position: relative;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .header-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .header-content {
+        position: relative;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 8px;
+        margin-top: -80px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-header h1 {
+        color: #0e7162;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+      }
+
+      .project-section {
+        margin-bottom: 50px;
+      }
+
+      .project-section h2 {
+        color: #0e7162;
+        border-bottom: 2px solid #0e7162;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+      }
+
+      .project-section h3 {
+        color: #0e7162;
+        margin: 30px 0 15px;
+      }
+
+      .project-section p,
+      .project-section li {
+        line-height: 1.8;
+        margin-bottom: 15px;
+      }
+
+      .project-section ul {
+        padding-left: 25px;
+      }
+
+      .info-box {
+        background: #f0f9f8;
+        padding: 25px;
+        border-radius: 8px;
+        margin: 30px 0;
+        border-left: 4px solid #0e7162;
+      }
+
+      .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 30px;
+        margin: 50px 0;
+        align-items: center;
+      }
+
+      .partner-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        padding: 15px;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .partner-logo img {
+        max-width: 100%;
+        max-height: 70px;
+        width: auto;
+        height: auto;
+      }
+
+      @media (max-width: 768px) {
+        .partners-grid {
+          grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+          gap: 20px;
+        }
+
+        .partner-logo {
+          height: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container nav-wrapper">
+        <img src="images/SMMK_logo.jpg" alt="Logo Stichting" class="logo" />
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          &#9776;
+        </button>
+        <nav class="nav" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html">Financiën</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div
+        class="content-section"
+        style="max-width: 1000px; margin: 0 auto; padding: 40px 20px"
+      >
+        <div class="project-header">
+          <!-- Group Photo -->
+          <img
+            src="images/Rotterdam-Gezond-En-Wel.jpg"
+            alt="Deelnemers aan Rotterdam Gezond en Wel project"
+            class="header-image"
+            loading="lazy"
+          />
+
+          <!-- Text Content Overlay -->
+          <div class="header-content">
+            <h1>Rotterdam Gezond en Wel</h1>
+            <p>
+              Een initiatief voor betere geestelijke gezondheidszorg in
+              Afrikaanse gemeenschappen
+            </p>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h2>ACTUELE INFORMATIE</h2>
+          <p>
+            Op 28 januari en 4 februari 2023 organiseerden we weer een geslaagde
+            cursus African Soul Care! Een training over geestelijke gezondheid,
+            Afrikaanse cultuur, christelijk geloof en de Nederlandse
+            samenleving. We bespraken hoe we gevoelige onderwerpen binnen onze
+            gemeenschap kunnen openen, hoe we anderen kunnen voorlichten, en hoe
+            je persoonlijke ervaringen kunt gebruiken bij de voorlichting aan
+            anderen.
+          </p>
+
+          <div class="info-box">
+            <p>
+              Komende periode staan er nog twee interessante cursussen gepland:
+              Confidential Person en Community Organising. Meer weten? Neem dan
+              contact op voor meer informatie hoe jij mee kunt doen met dit
+              project!
+            </p>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h2>ALGEMENE INFORMATIE</h2>
+
+          <h3>Probleemschets</h3>
+          <p>
+            Voor de integratie van deze psychisch kwetsbare groepen in de
+            Nederlandse samenleving, is het bevorderen van de geestelijke
+            gezondheid van cruciaal belang. Deze migranten staan echter niet
+            altijd open voor interventie van Nederlandse hulpverleners in de
+            geestelijke gezondheidszorg (GGZ), onder meer vanwege hun verschil
+            in culturele en levensbeschouwelijke achtergronden. Zo worden
+            psychische problemen vaak gezien als het gevolg van voodoo en
+            bestaat er angst voor stigmatisatie door de eigen gemeenschap
+            vanwege psychiatrische problematiek. Omgekeerd weten Nederlandse
+            hulpverleners niet hoe zij deze Afrikaanse migranten kunnen bereiken
+            en bijstaan.
+          </p>
+
+          <h3>Doelgroep</h3>
+          <p>
+            Primaire doelgroep: inwoners van Rotterdam met Afrikaanse roots die
+            met psychische problemen kampen en geen gebruik (willen) maken van
+            reguliere zorg.
+          </p>
+
+          <p>Secundaire doelgroepen:</p>
+          <ul>
+            <li>
+              Rotterdammers met Afrikaanse roots die geen psychische problemen
+              hebben maar wel met de primaire doelgroep in contact staan.
+            </li>
+            <li>
+              Nederlandse zorgverleners die werken met de primaire doelgroep.
+            </li>
+          </ul>
+
+          <h3>Doelstelling</h3>
+          <p>
+            <strong>Hoofddoel:</strong> Het nader tot elkaar brengen van
+            Nederlandse zorgverleners en Nederlanders afkomstig uit Afrika met
+            psychische stoornissen, zodat Nederlanders afkomstig uit Afrika met
+            psychische problemen adequaat worden opgevangen en behandeld, en om
+            te voorkomen dat psychische problemen en/of pathologische toestanden
+            van bezetenheid verergeren.
+          </p>
+
+          <p><strong>Nevendoelen:</strong></p>
+          <ul>
+            <li>
+              Het op gang brengen van een dialoog binnen de Afrikaanse
+              gemeenschappen over psychische problemen. Daarbij de taboe- en
+              zwijgcultuur over dit thema bij deze doelgroep doorbreken.
+            </li>
+            <li>
+              Informeren van Nederlandse zorgverleners over de cultuur van
+              voodoo en hoe dit het leven van mensen beïnvloedt, hoe ze deze
+              kennis kunnen toepassen in de praktijk, en wat adequate
+              behandelingsmethoden zijn.
+            </li>
+            <li>
+              Bijdragen aan het (geestelijk en lichamelijk) welzijn van de
+              primaire doelgroep, waardoor hun levenskwaliteit verbetert.
+            </li>
+            <li>
+              Bijdragen (direct en indirect) aan het vergroten van de
+              sociaal-maatschappelijke integratie, participatie en emancipatie
+              van de primaire doelgroep.
+            </li>
+          </ul>
+
+          <h3>Kernactiviteiten</h3>
+          <p>
+            Onze doelstellingen willen wij nastreven door ons te richten op vier
+            kernactiviteiten:
+          </p>
+          <ul>
+            <li>
+              Behandeling van de doelgroep, d.m.v.
+              interventie-activiteitentraject en cultuur sensitieve zorg.
+            </li>
+            <li>
+              Bewustwording vergroten, d.m.v. communicatie- en trainingstraject
+              en informatiebijeenkomsten.
+            </li>
+            <li>
+              Wetenschappelijke kennis verzamelen, borgen en implementeren in
+              concrete zorgverlening, d.m.v. handelingsonderzoek en
+              kenniscentrum.
+            </li>
+            <li>
+              Maatschappelijke participatie en het algemeen welzijn van de
+              doelgroep.
+            </li>
+          </ul>
+
+          <p>
+            Het project 'Rotterdam Gezond en Wel' is gestart per 1 oktober 2021.
+            <a href="downloads/jaarverslag-rotterdam-gezond.pdf"
+              >Lees hier het verslag van het eerste projectjaar</a
+            >.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h2>Onze Partners</h2>
+          <div class="partners-grid">
+            <!-- Partner Logo 1 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner1.png"
+                alt="Partner Organisatie 1"
+              />
+            </div>
+            <!-- Partner Logo 2 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner2.png"
+                alt="Partner Organisatie 2"
+              />
+            </div>
+            <!-- Partner Logo 3 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner3.png"
+                alt="Partner Organisatie 3"
+              />
+            </div>
+            <!-- Partner Logo 4 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner4.png"
+                alt="Partner Organisatie 4"
+              />
+            </div>
+            <!-- Partner Logo 5 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner5.png"
+                alt="Partner Organisatie 5"
+              />
+            </div>
+            <!-- Partner Logo 6 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner6.png"
+                alt="Partner Organisatie 6"
+              />
+            </div>
+            <!-- Partner Logo 7 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner7.png"
+                alt="Partner Organisatie 7"
+              />
+            </div>
+            <!-- Partner Logo 8 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner8.png"
+                alt="Partner Organisatie 8"
+              />
+            </div>
+            <!-- Partner Logo 9 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner9.png"
+                alt="Partner Organisatie 9"
+              />
+            </div>
+            <!-- Partner Logo 10 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner10.png"
+                alt="Partner Organisatie 10"
+              />
+            </div>
+            <!-- Partner Logo 11 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner11.png"
+                alt="Partner Organisatie 11"
+              />
+            </div>
+            <!-- Partner Logo 12 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner12.png"
+                alt="Partner Organisatie 12"
+              />
+            </div>
+            <!-- Partner Logo 13 -->
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner13.png"
+                alt="Partner Organisatie 13"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Your existing footer -->
+      <div class="container footer-grid">
+        <div class="footer-column">
+          <h3>Correspondentiegegevens</h3>
+          <ul>
+            <li><strong>KvK:</strong> 58178430</li>
+            <li><strong>RSIN:</strong> 852911993</li>
+            <li><strong>Rechtsvorm:</strong> Stichting</li>
+            <li><strong>Naam:</strong> Stichting Migrant Moeder en Kind</li>
+            <li><strong>Zetel:</strong> Amsterdam</li>
+            <li><strong>IBAN:</strong> NL35 INGB 0007666464</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Laan van Kronenburg 14, 1183
+              AS Amstelveen
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:care@srmmk.org">care@srmmk.org</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+31650914842">06 50 91 48 42</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html">Financiën</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 SRMMK. Alle rechten voorbehouden. | Ontwerp door
+          <a href="https://honouredhands.com" target="_blank">honouredhands</a>
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/yourprofile" target="_blank" aria-label="X"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/yourchannel"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

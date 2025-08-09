@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMMK Projecten | Stichting Migrant Moeder en Kind</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Project Page Specific Styles */
+      .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+        margin: 50px 0;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .project-image {
+        height: 250px;
+        overflow: hidden;
+      }
+
+      .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .project-card:hover .project-image img {
+        transform: scale(1.05);
+      }
+
+      .project-content {
+        padding: 25px;
+      }
+
+      .project-content h3 {
+        color: #0e7162;
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      .project-content p {
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .project-link {
+        display: inline-flex;
+        align-items: center;
+        color: #0e7162;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .project-link i {
+        margin-left: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .project-link:hover {
+        text-decoration: underline;
+      }
+
+      .project-link:hover i {
+        transform: translateX(3px);
+      }
+
+      @media (max-width: 768px) {
+        .projects-container {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+
+        .project-image {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container nav-wrapper">
+        <img src="images/SMMK_logo.jpg" alt="Logo Stichting" class="logo" />
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          &#9776;
+        </button>
+        <nav class="nav" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html">Financiën</a></li>
+            <li><a href="projecten.html" aria-current="page">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div
+        class="content-section"
+        style="max-width: 1200px; margin: 0 auto; padding: 40px 20px"
+      >
+        <h1 style="text-align: center; margin-bottom: 50px; color: #0e7162">
+          SMMK Projecten
+        </h1>
+
+        <div class="projects-container">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/Rotterdam-Gezond-En-Wel.jpg"
+                alt="Nederland Gezond en Wel project"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Rotterdam Gezond en Wel</h3>
+              <p>
+                Een initiatief gericht op het verbeteren van mentale gezondheid
+                binnen migrantengemeenschappen. We bieden workshops,
+                ondersteuningsgroepen en trainingen aan om bewustwording te
+                vergroten en stigma's te doorbreken.
+              </p>
+              <a href="project-rotterdam-gezond.html" class="project-link">
+                Meer details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/Symposium.jpg"
+                alt="Vrouwen Ontwikkelingsprogramma"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3>SYMPOSIUM Diversiteit en Sensitiviteit in de Zorgpraktijk</h3>
+              <p>
+                Een interactief symposium over culturele sensitiviteit in de
+                gezondheidszorg, met workshops door vooraanstaande experts en
+                praktische tools voor zorgprofessionals.
+              </p>
+              <a href="project-vrouwen-ontwikkeling.html" class="project-link">
+                Meer details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Your existing footer -->
+      <div class="container footer-grid">
+        <div class="footer-column">
+          <h3>Correspondentiegegevens</h3>
+          <ul>
+            <li><strong>KvK:</strong> 58178430</li>
+            <li><strong>RSIN:</strong> 852911993</li>
+            <li><strong>Rechtsvorm:</strong> Stichting</li>
+            <li><strong>Naam:</strong> Stichting Migrant Moeder en Kind</li>
+            <li><strong>Zetel:</strong> Amsterdam</li>
+            <li><strong>IBAN:</strong> NL35 INGB 0007666464</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Laan van Kronenburg 14, 1183
+              AS Amstelveen
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:care@srmmk.org">care@srmmk.org</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+31650914842">06 50 91 48 42</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="financien.html">Financiën</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 SRMMK. Alle rechten voorbehouden. | Ontwerp door
+          <a href="https://honouredhands.com" target="_blank">honouredhands</a>
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/yourprofile" target="_blank" aria-label="X"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/yourchannel"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
