@@ -12,8 +12,58 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container nav-wrapper">
-        <img src="images/SMMK_logo.jpg" alt="Logo Stichting" class="logo" />
+      <!-- Top green social bar -->
+      <div class="top-bar">
+        <div class="container top-bar-content">
+          <!-- Left: email -->
+          <div class="email-link">
+            <a href="mailto:care@srmmk.org" aria-label="Email">
+              <i class="fas fa-envelope"></i> care@srmmk.org
+            </a>
+          </div>
+
+          <!-- Right: social media -->
+          <div class="social-links">
+            <a
+              href="https://twitter.com/yourprofile"
+              target="_blank"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://facebook.com/yourpage"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://youtube.com/yourchannel"
+              target="_blank"
+              aria-label="YouTube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="https://instagram.com/yourprofile"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://linkedin.com/company/yourprofile"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main navigation -->
+      <div class="nav-wrapper">
+        <a href="index.html">
+          <img src="images/SMMK_logo.jpg" alt="Logo Stichting" class="logo" />
+        </a>
+
         <button class="menu-toggle" id="menuToggle" aria-label="Menu">
           &#9776;
         </button>
@@ -31,19 +81,32 @@
     </header>
 
     <section class="hero">
-      <div class="hero-text">
-        <h1>SMMK STICHTING</h1>
-        <p>
-          Stichting Migrant, Moeder en Kind is een organisatie die zich richt op
-          het verbeteren van de leefkwaliteit, het welzijn en de
-          maatschappelijke omstandigheden van Afrikaanse migranten in Nederland.
-          De doelgroep van de stichting wordt gevormd door migranten wiens roots
-          in Sub Sahara Afrika liggen. Dat gaat zowel om nieuwkomers die de
-          laatste jaren zijn gearriveerd, als om Afrikanen die al jaren in
-          Nederland woonachtig zijn, als om mensen vanuit de Afrikaanse
-          diasporagemeenschappen elders in de wereld (zoals Suriname en
-          Caribisch gebied).
-        </p>
+      <div class="hero-container">
+        <!-- Left: Text -->
+        <div class="hero-text">
+          <h1>SMMK STICHTING</h1>
+          <p>
+            Stichting Migrant, Moeder en Kind is een organisatie die zich richt
+            op het verbeteren van de leefkwaliteit, het welzijn en de
+            maatschappelijke omstandigheden van Afrikaanse migranten in
+            Nederland. De doelgroep van de stichting wordt gevormd door
+            migranten wiens roots in Sub Sahara Afrika liggen. Dat gaat zowel om
+            nieuwkomers die de laatste jaren zijn gearriveerd, als om Afrikanen
+            die al jaren in Nederland woonachtig zijn, als om mensen vanuit de
+            Afrikaanse diasporagemeenschappen elders in de wereld (zoals
+            Suriname en Caribisch gebied).
+          </p>
+        </div>
+        <!-- Right: Video -->
+        <div class="hero-video">
+          <video id="heroVideo" autoplay muted loop playsinline>
+            <source src="videos/hero-video.mp4" type="video/mp4" />
+            Uw browser ondersteunt deze video niet.
+          </video>
+          <button class="mute-toggle" id="muteToggle" aria-label="Toggle sound">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -143,23 +206,6 @@
           &copy; 2025 SRMMK. Alle rechten voorbehouden. | Ontwerp door
           <a href="https://honouredhands.com" target="_blank">honouredhands</a>
         </p>
-        <div class="social-icons">
-          <a
-            href="https://www.facebook.com/yourpage"
-            target="_blank"
-            aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="https://x.com/yourprofile" target="_blank" aria-label="X"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/yourchannel"
-            target="_blank"
-            aria-label="YouTube"
-            ><i class="fab fa-youtube"></i
-          ></a>
-        </div>
       </div>
     </footer>
 

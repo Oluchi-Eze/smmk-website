@@ -26,3 +26,17 @@ window.addEventListener('scroll', function() {
     }
   });
 });
+
+document.getElementById("menuToggle").addEventListener("click", function () {
+  document.getElementById("navMenu").classList.toggle("active");
+});
+
+const video = document.getElementById("heroVideo");
+const muteBtn = document.getElementById("muteToggle");
+
+muteBtn.addEventListener("click", () => {
+  video.muted = !video.muted;
+  muteBtn.innerHTML = video.muted
+    ? '<i class="fas fa-volume-mute"></i>'
+    : '<i class="fas fa-volume-up"></i>';
+});
